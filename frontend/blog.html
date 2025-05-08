@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="subscribe-popup" class="subscribe-popup hidden">
+    <div class="subscribe-content">
+      <h3>Підпишіться на оновлення!</h3>
+      <p>Будьте в курсі новинок та знижок.</p>
+      <button id="accept-subscribe">Підписатися</button>
+      <button id="decline-subscribe">Ні, дякую</button>
+    </div>
+  </div>
+  
+  <div id="thank-you" class="thank-you hidden">Дякуємо за підписку!</div>
+    <header class="header">
+        <div class="header-icon">
+            <svg fill="#000000" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 187.334 187.334" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M182.334,148.042h-20.167V75.136c0-2.761-2.238-5-5-5H142.35c-2.762,0-5,2.239-5,5v72.906h-4.183V62.803 c0-2.761-2.238-5-5-5H113.35c-2.762,0-5,2.239-5,5v85.239H101.1c0.167-0.678,0.202-1.387,0.075-2.087L80.926,35.123 c-0.497-2.716-3.095-4.515-5.817-4.02l-24.413,4.46c-0.074,0.014-0.142,0.045-0.214,0.062c-0.471-0.147-0.962-0.249-1.481-0.249 H24.183c-2.762,0-5,2.239-5,5v107.667H10V34.292c0-2.761-2.238-5-5-5s-5,2.239-5,5v118.75c0,2.761,2.238,5,5,5h19.183H49h133.334 c2.762,0,5-2.239,5-5S185.096,148.042,182.334,148.042z M54,81.474l12.162,66.569H54V81.474z"></path>
+                </g>
+            </svg>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a> 
+            <a href="basket.html">Your basket</a>
+        </nav>
+        <form class="search-form">
+            <input type="text" placeholder="Search books..." name="search">
+            <button type="submit">Search!</button>
+        </form>
+    </header>
+    <main>
+        <div class="bento-banner">
+            <div class="item wide"><img src="images/fb5.jpeg" alt="Banner"></div>
+            <div class="item wide"><img src="images/fb2.jpeg" alt="Banner"></div>
+            <div class="item tall"><img src="images/fb3.jpeg" alt="Banner"></div>
+            <div class="item wide"><img src="images/fb1.jpeg" alt="Banner"></div>
+            <div class="item"><video autoplay muted loop><source src="images/video.mp4" type="video/mp4"></video></div>
+            <div class="item"><img src="images/fb4.jpeg" alt="Banner"></div>
+            <div class="item wide"><video autoplay muted loop><source src="images/video2.mp4" type="video/mp4"></video></div>
+          </div>
+
+ 
+
+          <div class="blog-container" id="blog-container"></div>
+          <div class="load-more-container">
+            <button id="loadMoreBtn">Показати більше</button>
+          </div>
+          
+
+        <div id="popup-ad" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Спеціальна пропозиція!</h2>
+                <p>Отримайте знижку 10% на всі книги!</p>
+                <img src="images/sale.jpeg" alt="Special Offer" class="popup-image">
+                <button id="claim-offer">Отримати знижку</button>
+            </div>
+        </div>
+
+    </main>
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/top.svg" alt="Up" style="width: 24px; height: 24px;">
+      </button>
+    <script src="window.js"></script>
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+    <script src="buttontop.js"></script>
+</body>
+</html>
